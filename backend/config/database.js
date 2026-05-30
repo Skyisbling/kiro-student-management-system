@@ -17,7 +17,7 @@ const db = new sqlite3.Database(DB_PATH, (err) => {
     if (err) {
         console.error('Error connecting to database:', err.message);
     } else {
-        console.log('✓ Connected to SQLite database');
+        console.log('Connected to SQLite database');
     }
 });
 
@@ -69,7 +69,7 @@ function initializeDatabase() {
                 return;
             }
 
-            console.log('✓ Students table is ready');
+            console.log('Students table is ready');
 
             // Check if the table is empty
             db.get('SELECT COUNT(*) as count FROM students', (err, row) => {
@@ -83,12 +83,12 @@ function initializeDatabase() {
                     console.log('  Seeding database with sample data...');
                     seedDatabase()
                         .then(() => {
-                            console.log('✓ Sample data inserted (10 records)');
+                            console.log('Sample data inserted (10 records)');
                             resolve();
                         })
                         .catch(reject);
                 } else {
-                    console.log(`✓ Database has ${row.count} existing records`);
+                    console.log(`Database has ${row.count} existing records`);
                     resolve();
                 }
             });
