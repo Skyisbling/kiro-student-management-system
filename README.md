@@ -6,13 +6,13 @@ A web application to manage student records using CRUD operations (Create, Read,
 
 ## Features
 
-- **Add Students** – Register new students with roll number, name, age, gender, course, and email.
-- **View Students** – Display all student records in a responsive table.
-- **Edit Students** – Update existing student information.
-- **Delete Students** – Remove student records with confirmation dialog.
-- **Search Students** – Search by name or roll number (asynchronous, no page reload).
-- **Dashboard** – Overview with total count, quick actions, and recent students.
-- **Responsive Design** – Works on desktop, tablet, and mobile devices.
+- **Add Students** - Register new students with roll number, name, age, gender, course, and email.
+- **View Students** - Display all student records in a responsive table.
+- **Edit Students** - Update existing student information.
+- **Delete Students** - Remove student records with confirmation dialog.
+- **Search Students** - Search by name or roll number (asynchronous, no page reload).
+- **Dashboard** - Overview with total count, quick actions, and recent students.
+- **Responsive Design** - Works on desktop, tablet, and mobile devices.
 
 ---
 
@@ -20,40 +20,40 @@ A web application to manage student records using CRUD operations (Create, Read,
 
 ```
 student-management-system/
-├── backend/
-│   ├── app.js                    # Express server setup
-│   ├── config/
-│   │   └── database.js           # Database configuration
-│   ├── database/
-│   │   └── students.db           # SQLite database (auto-generated)
-│   ├── controllers/
-│   │   └── studentController.js  # Business logic
-│   ├── models/
-│   │   └── studentModel.js       # Database operations
-│   └── routes/
-│       └── studentRoutes.js      # Route definitions
-├── frontend/
-│   ├── views/
-│   │   ├── layout.ejs            # Main layout template
-│   │   ├── pages/
-│   │   │   ├── dashboard.ejs     # Dashboard page
-│   │   │   ├── students.ejs      # View all students
-│   │   │   ├── add-student.ejs   # Add student form
-│   │   │   ├── edit-student.ejs  # Edit student form
-│   │   │   └── about.ejs         # About page
-│   │   └── partials/
-│   │       ├── navbar.ejs        # Navigation bar
-│   │       ├── footer.ejs        # Footer
-│   │       └── alerts.ejs        # Alert messages
-│   └── assets/
-│       ├── css/
-│       │   └── style.css         # Custom styles
-│       ├── js/
-│       │   └── main.js           # Client-side JavaScript
-│       └── images/
-├── package.json
-├── README.md
-└── .gitignore
+|-- backend/
+|   |-- app.js                    # Express server setup
+|   |-- config/
+|   |   |-- database.js           # Database configuration
+|   |-- database/
+|   |   |-- students.db           # SQLite database (auto-generated)
+|   |-- controllers/
+|   |   |-- studentController.js  # Business logic
+|   |-- models/
+|   |   |-- studentModel.js       # Database operations
+|   |-- routes/
+|       |-- studentRoutes.js      # Route definitions
+|-- frontend/
+|   |-- views/
+|   |   |-- layout.ejs            # Main layout template
+|   |   |-- pages/
+|   |   |   |-- dashboard.ejs     # Dashboard page
+|   |   |   |-- students.ejs      # View all students
+|   |   |   |-- add-student.ejs   # Add student form
+|   |   |   |-- edit-student.ejs  # Edit student form
+|   |   |   |-- about.ejs         # About page
+|   |   |-- partials/
+|   |       |-- navbar.ejs        # Navigation bar
+|   |       |-- footer.ejs        # Footer
+|   |       |-- alerts.ejs        # Alert messages
+|   |-- assets/
+|       |-- css/
+|       |   |-- style.css         # Custom styles
+|       |-- js/
+|       |   |-- main.js           # Client-side JavaScript
+|       |-- images/
+|-- package.json
+|-- README.md
+|-- .gitignore
 ```
 
 ---
@@ -149,7 +149,7 @@ The database is seeded with 10 sample records automatically if the table is empt
 
 ## Screenshots
 
-> _Add screenshots of the application here after running the project._
+> Add screenshots of the application here after running the project.
 
 - Dashboard Page
 - View Students Page
