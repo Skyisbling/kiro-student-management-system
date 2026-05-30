@@ -3,7 +3,7 @@
     <div class="container">
         <!-- Brand / Logo -->
         <a class="navbar-brand fw-bold" href="/">
-            Student SMS
+            <i class="bi bi-mortarboard-fill me-1"></i> Student SMS
         </a>
 
         <!-- Mobile Toggle Button -->
@@ -12,19 +12,20 @@
         </button>
 
         <!-- Navigation Links -->
+        <!-- The 'active' class is set dynamically based on the current page title -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Dashboard</a>
+                    <a class="nav-link <%= title === 'Dashboard' ? 'active fw-bold' : '' %>" href="/">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/students">Students</a>
+                    <a class="nav-link <%= title === 'All Students' ? 'active fw-bold' : '' %>" href="/students">Students</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/students/add">Add Student</a>
+                    <a class="nav-link <%= title === 'Add Student' ? 'active fw-bold' : '' %>" href="/students/add">Add Student</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link <%= title === 'About' ? 'active fw-bold' : '' %>" href="/about">About</a>
                 </li>
             </ul>
         </div>
