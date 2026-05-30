@@ -22,7 +22,7 @@ function showAlert(message, type = 'success') {
     // Create alert HTML
     const alertHTML = `
         <div class="alert alert-${type} alert-dismissible fade show" role="alert">
-            <i class="bi bi-${type === 'success' ? 'check-circle' : 'exclamation-circle'} me-2"></i>
+            <i class="bi bi-${type === 'success' ? 'info-circle' : 'exclamation-circle'} me-2"></i>
             ${message}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
