@@ -8,9 +8,16 @@
 
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
+const fs = require('fs');
 
 // Path to the SQLite database file
 const DB_PATH = path.join(__dirname, '../database/students.db');
+
+// Create the database folder if it does not exist
+const DB_DIR = path.join(__dirname, '../database');
+if (!fs.existsSync(DB_DIR)) {
+    fs.mkdirSync(DB_DIR, { recursive: true });
+}
 
 // Create database connection
 const db = new sqlite3.Database(DB_PATH, (err) => {
