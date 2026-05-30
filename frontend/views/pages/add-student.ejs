@@ -1,0 +1,119 @@
+<!-- Add Student Page -->
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="fw-bold">
+            <i class="bi bi-person-plus me-2"></i>Add New Student
+        </h2>
+        <p class="text-muted">Fill in the form below to register a new student</p>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+                <!-- Add Student Form -->
+                <form id="addStudentForm">
+                    <!-- Roll Number -->
+                    <div class="mb-3">
+                        <label for="roll_number" class="form-label fw-bold">
+                            <i class="bi bi-hash me-1"></i>Roll Number
+                        </label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="roll_number" 
+                            name="roll_number" 
+                            placeholder="e.g., CS2024005"
+                            required
+                        >
+                    </div>
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-bold">
+                            <i class="bi bi-person me-1"></i>Full Name
+                        </label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="name" 
+                            name="name" 
+                            placeholder="e.g., John Doe"
+                            required
+                        >
+                    </div>
+
+                    <!-- Age and Gender Row -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="age" class="form-label fw-bold">
+                                <i class="bi bi-calendar me-1"></i>Age
+                            </label>
+                            <input 
+                                type="number" 
+                                class="form-control" 
+                                id="age" 
+                                name="age" 
+                                placeholder="e.g., 20"
+                                min="1"
+                                required
+                            >
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="gender" class="form-label fw-bold">
+                                <i class="bi bi-gender-ambiguous me-1"></i>Gender
+                            </label>
+                            <select class="form-select" id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Course -->
+                    <div class="mb-3">
+                        <label for="course" class="form-label fw-bold">
+                            <i class="bi bi-book me-1"></i>Course
+                        </label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="course" 
+                            name="course" 
+                            placeholder="e.g., Computer Science"
+                            required
+                        >
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">
+                            <i class="bi bi-envelope me-1"></i>Email
+                        </label>
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            id="email" 
+                            name="email" 
+                            placeholder="e.g., student@college.edu"
+                            required
+                        >
+                    </div>
+
+                    <!-- Submit Buttons -->
+                    <div class="d-flex gap-2 mt-4">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="bi bi-check-circle me-1"></i>Add Student
+                        </button>
+                        <a href="/students" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left me-1"></i>Back to List
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
